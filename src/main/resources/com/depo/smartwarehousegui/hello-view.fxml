@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="15.0" xmlns:fx="http://javafx.com/fxml" fx:controller="com.depo.smartwarehousegui.HelloController">
+
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <Label text="Akıllı Depo Yönetim Sistemi" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+
+    <TextField fx:id="urunAdiField" promptText="Ürün Adı (Örn: Asus ROG Laptop)"/>
+
+    <TextField fx:id="adetField" promptText="Sipariş Adedi (Örn: 2)"/>
+
+    <Button text="Sipariş Ver" onAction="#onSiparisVerButtonClick" style="-fx-background-color: #2196F3; -fx-text-fill: white; -fx-font-weight: bold; -fx-pref-width: 150px;"/>
+
+    <TextArea fx:id="bilgiEkrani" editable="false" prefHeight="200.0" prefWidth="400.0"/>
+
+</VBox>
